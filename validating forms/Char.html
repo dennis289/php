@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number validation
+
+    </title>
+    <script>
+        function validate(name){
+            var check= /^[a-zA-Z]+$/;
+            if (name.value.match(check))
+            {
+                return true;
+            }
+            else{
+                alert("Please enter letters only");
+                return false;
+            }
+        }  
+    </script>
+</head>
+<body bgcolor="gray">
+    <form name="valid">
+        <label for="name"> Enter your name: </label>
+        <input type="text" name="name" id="name" required>
+        <input type="submit" value="Submit" 
+        onclick="return validate(document.valid.name)">
+
+    </form>
+    
+</body>
+</html>
