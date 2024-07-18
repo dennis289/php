@@ -45,6 +45,9 @@
         <div>
             <button type="submit" class="btn btn-success">Submit</button>
         </div>
+        <div>
+            <a href="view_feedback.php">View Feedback</a>
+        </div>
 
       </form>
    </div>
